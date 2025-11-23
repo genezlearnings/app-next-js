@@ -98,6 +98,7 @@ export default function About() {
               whileInView="visible"
               viewport={{ once: true }}
             >
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/vision.gif"
                 alt="Illustration representing our vision"
@@ -125,6 +126,7 @@ export default function About() {
               whileInView="visible"
               viewport={{ once: true }}
             >
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/mission.gif"
                 alt="Illustration representing our mission"
@@ -180,6 +182,7 @@ export default function About() {
               </div>
 
               <div className="lg:w-1/2">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/why-choose.png"
                   alt="Students learning with Genez Learnings"
@@ -233,6 +236,7 @@ export default function About() {
             {/* Join Banner */}
             <div className="w-full py-10">
               <div className="relative max-w-4xl mx-auto">
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/join-banner.svg"
                   alt="Join our community"

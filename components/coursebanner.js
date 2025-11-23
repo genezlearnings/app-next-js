@@ -74,6 +74,7 @@ export default function CourseBanner() {
               href={banners[currentSlide].link}
               className="block w-full h-full"
             >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={banners[currentSlide].image}
                 alt={banners[currentSlide].alt}

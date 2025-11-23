@@ -149,6 +149,7 @@ export default function Contact() {
 
                 {/* GIF */}
                 <div className="mt-8 md:mt-12 -ml-4">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/contact-gif.gif"
                     alt="Contact Animation"

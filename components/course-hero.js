@@ -61,6 +61,7 @@ const CourseHero = ({ title, description, duration, price, image }) => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="relative"
             >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={image || "/course-placeholder.jpg"}
                 alt={title}

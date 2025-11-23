@@ -36,12 +36,16 @@ const CourseBanner = () => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <Link href={banner.link} className="block w-full h-full">
+
         {banner.type === 'svg' ? (
-          <img
-            src={banner.src}
-            alt={banner.alt}
-            className="w-full h-full object-cover object-center"
-          />
+          <>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={banner.src}
+              alt={banner.alt}
+              className="w-full h-full object-cover object-center"
+            />
+          </>
         ) : (
           <Image
             src={banner.src}
@@ -57,6 +61,7 @@ const CourseBanner = () => {
             priority
           />
         )}
+
         {banner.title && (
           <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
             <div className="text-center text-white px-4 max-w-6xl mx-auto">

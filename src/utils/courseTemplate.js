@@ -160,6 +160,7 @@ const CourseTemplate = ({ courseData }) => {
               </div>
 
               {/* Success GIF */}
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/success.gif"
                 alt="Success"
@@ -180,6 +181,7 @@ const CourseTemplate = ({ courseData }) => {
               </div>
 
               {/* Certificate GIF */}
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/certificate.gif"
                 alt="Certification"

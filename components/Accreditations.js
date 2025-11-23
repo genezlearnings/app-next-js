@@ -41,6 +41,7 @@ export default function Accreditations() {
                 key={idx}
                 className="flex-shrink-0 flex items-center justify-center bg-white rounded-lg p-4 md:p-6 w-[200px] md:w-[280px] h-[100px] md:h-[120px]"
               >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={logo.src}
                   alt={logo.alt}
