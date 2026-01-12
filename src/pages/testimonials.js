@@ -133,10 +133,8 @@ export default function Testimonials() {
           <h3 className="text-2xl font-bold text-gray-800 mb-6">
             Ready to start your journey?
           </h3>
-<Link href="/courses">
-  <a className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-[#7b2979] to-[#9d3a9b] text-white font-medium rounded-lg hover:opacity-90 transition-all transform hover:-translate-y-0.5">
+<Link href="/courses" className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-[#7b2979] to-[#9d3a9b] text-white font-medium rounded-lg hover:opacity-90 transition-all transform hover:-translate-y-0.5">
     Explore Our Courses
-  </a>
 </Link>
         </div>
       </main>

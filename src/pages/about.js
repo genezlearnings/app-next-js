@@ -244,12 +244,8 @@ export default function About() {
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
                 <div className="absolute bottom-0 left-0 right-0 flex justify-center pb-4 sm:pb-6">
-                  <Link href="/contact">
-                    <a
-                      className="inline-flex items-center justify-center rounded-full bg-[#7b2979] text-white font-semibold py-1.5 px-3 sm:py-2 sm:px-4 md:py-2 md:px-6 text-xs sm:text-sm md:text-base shadow-md hover:bg-[#9d3a9b] hover:shadow-lg transform hover:scale-105 transition-all duration-300"
-                    >
+                  <Link href="/contact" className="inline-flex items-center justify-center rounded-full bg-[#7b2979] text-white font-semibold py-1.5 px-3 sm:py-2 sm:px-4 md:py-2 md:px-6 text-xs sm:text-sm md:text-base shadow-md hover:bg-[#9d3a9b] hover:shadow-lg transform hover:scale-105 transition-all duration-300">
                       Enroll Now
-                    </a>
                   </Link>
                 </div>
               </div>
@@ -273,12 +269,8 @@ export default function About() {
                 <strong>your success story begins here.</strong>
               </p>
               <div className="mt-6">
-                <Link href="/courses">
-                  <a
-                    className="inline-flex items-center justify-center rounded-full bg-[#7b2979] text-white font-semibold py-2 px-6 transition-all duration-300 hover:bg-[#9d3a9b]"
-                  >
-                    Explore Courses
-                  </a>
+                <Link href="/courses" className="inline-flex items-center justify-center rounded-full bg-[#7b2979] text-white font-semibold py-2 px-6 transition-all duration-300 hover:bg-[#9d3a9b]">
+                  Explore Courses
                 </Link>
               </div>
             </motion.div>

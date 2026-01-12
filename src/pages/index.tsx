@@ -86,8 +86,7 @@ export default function Home() {
             </div>
 
             <div className="text-center mt-10">
-              <Link href="/courses">
-                <a className="inline-flex items-center text-[#7b2979] font-semibold hover:underline">
+              <Link href="/courses" className="inline-flex items-center text-[#7b2979] font-semibold hover:underline">
                   View All Courses
                   <svg
                     className="ml-2 w-5 h-5"
@@ -102,7 +101,6 @@ export default function Home() {
                       d="M13 7l5 5m0 0l-5 5m5-5H6"
                     />
                   </svg>
-                </a>
               </Link>
             </div>
           </div>
@@ -193,8 +191,7 @@ export default function Home() {
             </div>
 
             <div className="text-center mt-10">
-              <Link href="/testimonials">
-                <a className="inline-flex items-center text-[#7b2979] font-semibold hover:underline">
+              <Link href="/testimonials" className="inline-flex items-center text-[#7b2979] font-semibold hover:underline">
                   Read More Stories
                   <svg
                     className="ml-2 w-5 h-5"
@@ -209,7 +206,6 @@ export default function Home() {
                       d="M13 7l5 5m0 0l-5 5m5-5H6"
                     />
                   </svg>
-                </a>
               </Link>
             </div>
           </div>

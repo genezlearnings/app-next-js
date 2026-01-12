@@ -157,12 +157,8 @@ export default function FAQ() {
           className="text-center mt-12"
         >
           <p className="text-gray-600 mb-4">Still have questions?</p>
-          <Link href="/contact">
-          <a
-            className="inline-flex items-center justify-center rounded-lg bg-[#7b2979] text-white px-8 py-3 font-semibold hover:bg-[#6a2268] transition-colors"
-          >
+          <Link href="/contact" className="inline-flex items-center justify-center rounded-lg bg-[#7b2979] text-white px-8 py-3 font-semibold hover:bg-[#6a2268] transition-colors">
             Contact Us
-          </a>
           </Link>
         </motion.div>
       </div>

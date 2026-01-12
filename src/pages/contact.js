@@ -1,4 +1,15 @@
-import Head from "next/head";
+// 🔒 Disable caching ONLY for this page
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
+export const revalidate = 0;
+
+// ✅ App Router metadata (replaces next/head)
+export const metadata = {
+  title: "Contact Us - Genez Learnings LLP",
+  description:
+    "Get in touch with Genez Learnings LLP for course inquiries and career guidance.",
+};
+
 import Image from "next/image";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
@@ -6,15 +17,8 @@ import Footer from "../../components/footer";
 export default function Contact() {
   return (
     <>
-      <Head>
-        <title>Contact Us - Genez Learnings LLP</title>
-        <meta
-          name="description"
-          content="Get in touch with Genez Learnings LLP for course inquiries and career guidance."
-        />
-      </Head>
-
       <Header />
+
       <main className="min-h-screen relative">
         {/* Header Section */}
         <section className="py-16 bg-gradient-to-br from-[#7b2979] to-[#9d3a9b] text-white">
@@ -30,11 +34,13 @@ export default function Contact() {
         <section className="py-16 bg-white relative overflow-hidden">
           <div className="container max-w-5xl relative z-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+              
               {/* Left Column */}
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">
                   Get in Touch
                 </h2>
+
                 <div className="space-y-4">
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
@@ -45,6 +51,7 @@ export default function Contact() {
                       genezlearnings@gmail.com
                     </a>
                   </div>
+
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
                     <a
@@ -54,13 +61,14 @@ export default function Contact() {
                       +91 99944 81981
                     </a>
                   </div>
+
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">
                       Follow Us
                     </h3>
                     <div className="flex gap-4 mt-2">
                       <a
-                        href="https://www.instagram.com/genez_learnings?igsh=NncxaTk4c2tiZjNo"
+                        href="https://www.instagram.com/genez_learnings"
                         target="_blank"
                         rel="noreferrer"
                         className="text-[#7b2979] hover:underline"
@@ -81,7 +89,7 @@ export default function Contact() {
 
                 {/* GIF */}
                 <div className="mt-8 md:mt-12 -ml-4">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/contact-gif.gif"
                     alt="Contact Animation"
@@ -90,14 +98,17 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Right Column (Google Form Link) */}
+              {/* Right Column (Google Form) */}
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                  Build skills. Build confidence
+                  Build skills. Build confidence.
                 </h2>
+
                 <p className="text-gray-600 mb-6">
-                  Fill out our contact form to register for a course. We'll get back to you as soon as possible.
+                  Fill out our contact form to register for a course. We'll get
+                  back to you as soon as possible.
                 </p>
+
                 <a
                   href="https://forms.gle/BCmGqSvCuFh1N7TP7"
                   target="_blank"
@@ -106,12 +117,13 @@ export default function Contact() {
                 >
                   Start Your Learning Journey!
                 </a>
+
               </div>
             </div>
           </div>
         </section>
 
-        {/* Telegram Banner Section */}
+        {/* Telegram Banner */}
         <section className="py-14 bg-white">
           <div className="container mx-auto px-6">
             <a
