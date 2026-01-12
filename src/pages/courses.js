@@ -102,10 +102,8 @@ export default function Courses() {
               <p className="text-gray-800 mb-6">
                 Ready to start your learning journey?
               </p>
-              <Link href="/contact">
-                <a className="bg-[#7b2979] hover:bg-[#9d3a9b] text-white font-semibold px-6 py-3 rounded-lg shadow-md transition">
+              <Link href="/contact" className="bg-[#7b2979] hover:bg-[#9d3a9b] text-white font-semibold px-6 py-3 rounded-lg shadow-md transition">
                   Contact Us
-                </a>
               </Link>
             </div>
           </div>

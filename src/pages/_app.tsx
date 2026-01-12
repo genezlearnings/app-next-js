@@ -19,10 +19,23 @@ const montserrat = Montserrat({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className={`${poppins.variable} ${montserrat.variable} font-sans bg-white text-gray-800`}>
+    <div
+      className={`${poppins.variable} ${montserrat.variable} font-sans bg-white text-gray-800`}
+    >
       <Head>
+        {/* Viewport */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* Apple Home Screen App Name */}
+        <meta name="apple-mobile-web-app-title" content="Gene Z" />
+
+        {/* ✅ Single cache-safe favicon */}
+        <link rel="icon" href="/favicon-v2.ico" />
+
+        {/* Apple devices */}
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </Head>
+
       <Component {...pageProps} />
     </div>
   );
